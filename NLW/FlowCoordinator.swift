@@ -12,10 +12,9 @@ class FlowCoordinator {
     private var navigationController: UINavigationController
     
     public init() {
-        
+        self.navigationController = UINavigationController()
     }
     
-    // ? É PRA SER OPCIONAL
     func start() -> UINavigationController? {
         let startViewController = UIViewController()
         startViewController.view.backgroundColor = .red
